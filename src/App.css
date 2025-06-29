@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.9) 0%, 
+      rgb(116, 47, 168) 50%,
+      rgba(0, 0, 1, 0.9) 100%);
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.navbar a:active {
+    transform: translateY(0);
+}
+
+h1{
+  color: rgba(5, 5, 5, 0.788);
+  font-size: 50px;
+  font-weight: 600;
+
+}
+
+p{
+  color: rgb(44, 40, 40);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.App {
+  text-align: center;
+}
+
+main {
+  border-radius: 6px;
+  background: #ffffff;
+  margin: 50px auto;
+
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg,
+      rgb(84, 189, 255) 0%,
+      #000001d8 100%);
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  overflow: auto;
+}
+
+.card:nth-child(4n + 1) {
+  background: linear-gradient(90deg,
+      rgba(30, 13, 185, 0.566) 0%,
+      #000001d8 100%);
+}
+
+.card:nth-child(4n + 2) {
+  background: linear-gradient(90deg,
+      #04eaff 0%,
+      #000001d8 100%);
+}
+
+.card:nth-child(4n + 3) {
+  background: linear-gradient(90deg,
+      rgb(0, 255, 174) 0%,
+      #000001d8 100%);
+}
+
+button {
+  border: none;
+  background-color: rgba(72, 5, 109, 0.795);
+  border-radius: 4px;
+  height: fit-content;
+  padding: 6px 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 64px;
+  width: 350px;
+}
+
+#counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 64px;
+  width: 350px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 64px;
+  width: 350px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+input {
+  background-color: azure;
+  border-width: 5px;
+  color: black;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 16px;
+} 
